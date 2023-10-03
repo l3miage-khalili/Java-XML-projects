@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<ns1:echec
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://ujf-grenoble.fr/echec'
+    xsi:schemaLocation='http://ujf-grenoble.fr/echec file:/home/k/khalili/NetBeansProjects/FDD_XML/xml-projects/TP03/web/xsd/echec.xsd'>
+    
+    <ns1:commentaire> AFG (noir) contre Jek (blanc), au 31eme coup, partie du 7 février 2003 </ns1:commentaire>
+    
+    
+    <ns1:piecesBlanches>
+        <ns1:piece>
+            <ns1:nom>roi</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>G</ns1:colonne>
+                <ns1:ligne>1</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>fou</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>D</ns1:colonne>
+                <ns1:ligne>6</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>tour</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>E</ns1:colonne>
+                <ns1:ligne>1</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>A</ns1:colonne>
+                <ns1:ligne>4</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>B</ns1:colonne>
+                <ns1:ligne>3</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>C</ns1:colonne>
+                <ns1:ligne>2</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>F</ns1:colonne>
+                <ns1:ligne>2</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>G</ns1:colonne>
+                <ns1:ligne>2</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>H</ns1:colonne>
+                <ns1:ligne>5</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+    </ns1:piecesBlanches>
+    
+    
+    <ns1:piecesNoires>
+        <ns1:piece>
+            <ns1:nom>roi</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>B</ns1:colonne>
+                <ns1:ligne>6</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>reine</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>A</ns1:colonne>
+                <ns1:ligne>7</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+        <ns1:piece>
+            <ns1:nom>pion</ns1:nom>
+            <ns1:position>
+                <ns1:colonne>D</ns1:colonne>
+                <ns1:ligne>4</ns1:ligne>
+            </ns1:position>
+        </ns1:piece>
+    </ns1:piecesNoires>
+
+</ns1:echec>
+
