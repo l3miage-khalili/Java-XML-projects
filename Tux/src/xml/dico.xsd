@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="http://ujf.fr/tux"
+           xmlns="http://ujf.fr/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <!-- ici on declare le nom et le type de la racine -->
+    
+    <xs:element name="dictionnaire" type="Dictionnaire"/>
+    
+    <!-- ici definition du type complexe Dictionnaire de l'element racine "dictionnaire"
+        ainsi que la declaration du nom et du type de son sous-element "mots"
+    -->
+    
+    <xs:complexType name="Dictionnaire">
+        <xs:sequence>
+            <xs:element name="mots" type="Mots"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <!-- ici definition du type complexe "Mots" de l'element "mots"
+        ainsi que la declaration du nom et du type de son sous-element "mot"
+    -->
+    
+    <xs:complexType name="Mots">
+        <xs:sequence>
+            <xs:element name="mot" type="Mot" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- ici definition du type complexe "Mot" de l'element "mot"
+        ainsi que la declaration du nom et du type de :
+        - son sous-element contenu
+        - son attribut niveau
+    -->
+    
+    <xs:complexType name="Mot">
+        <xs:sequence>
+            <xs:element name="contenu" type="Contenu"/>
+        </xs:sequence>
+        <xs:attribute name="niveau" type="Niveau" use="required"/>
+    </xs:complexType>
+    
+    <!-- ici definition du type simple "Niveau" de l'attribut "niveau"
+        qui determine le niveau de difficulté d'un mot (entre 1 à 5)
+    -->
+    
+    <xs:simpleType name="Niveau">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- ici definition du type simple "Contenu" de l'element contenu
+        qui contient un mot. Contraintes :
+            - ne contient pas de chiffre
+            - Pas de mots composés sans tiret
+            - pas de caractères spéciaux
+            - Accents et tiret sont possibles
+    -->
+    
+    <xs:simpleType name="Contenu">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-zéèêôâîàùçï]{3,}"/>
+            <xs:pattern value="[A-Za-zéèêôâîàùçï]'-'[A-Za-zéèêôâîàùçï]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
