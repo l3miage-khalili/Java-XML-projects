@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<ns1:profil
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux file:/home/k/khalili/NetBeansProjects/FDD_XML/xml-projects/Tux/src/xml/profil.xsd'>
+    
+    <ns1:nom>Kbg</ns1:nom>
+    
+    <ns1:avatar>kbgavatar.jpg</ns1:avatar>
+    
+    <ns1:anniversaire>1900-10-10</ns1:anniversaire>
+    
+    <ns1:parties>
+        <ns1:partie date="2023-10-10" trouvé="88%">
+            <ns1:temps>10.0</ns1:temps>
+            <ns1:mot niveau="2">Bonjour</ns1:mot>
+        </ns1:partie>
+    </ns1:parties>
+
+</ns1:profil>
+

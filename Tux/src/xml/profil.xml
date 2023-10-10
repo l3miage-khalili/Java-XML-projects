@@ -8,12 +8,16 @@
         Purpose of the document follows.
 -->
 
-<profil xmlns="http://myGame/tux" 
+<profil xmlns="http://myGame/tux"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://myGame/tux ./profil.xsd">
+    
     <nom>Alban</nom>
+    
     <avatar>conan.jpg</avatar>
+    
     <anniversaire>2006-05-08</anniversaire>
+    
     <parties>
         <partie date="2013-12-10">
             <temps>20.0</temps>
@@ -27,4 +31,5 @@
             <mot niveau="2">indice</mot>
         </partie>
     </parties>
+    
 </profil>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="http://polytech.ujf-grenoble.fr/authors"
+           xmlns="http://polytech.ujf-grenoble.fr/authors"
+           xmlns:idt="http://polytech.ujf-grenoble.fr/idty"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <!-- ici importation du vocabulaire http://polytech.ujf-grenoble.fr/idty -->
+    
+    <xs:import schemaLocation="idty.xsd" namespace="http://polytech.ujf-grenoble.fr/idty"/>
+    
+    <!-- ici declaration du nom et du type de l'element "infoAuteur"  -->
+    
+    <xs:element name="infoAuteur" type="InfoAuteur"/>
+    
+    <!-- ici definition du type "InfoAuteur" de l'element "infoAuteur"
+        ainsi que les declarations de nom et type de ses sous-elements 
+        "idAuteur", "dateNaissance" et "datedeces"
+    -->
+    
+    <xs:complexType name="InfoAuteur">
+        <xs:sequence>
+            <xs:element name="idAuteur" type="idt:Id"/>
+            <xs:element name="dateNaissance" type="xs:date"/>
+            <xs:element name="datedeces" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+</xs:schema>

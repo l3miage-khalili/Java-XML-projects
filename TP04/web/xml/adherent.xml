@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<ns1:adherent
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://polytech.ujf-grenoble.fr/adherent'
+    xmlns:ns2="http://polytech.ujf-grenoble.fr/idty"
+    xmlns:ns3="http://polytech.ujf-grenoble.fr/authors"
+    xsi:schemaLocation='http://polytech.ujf-grenoble.fr/adherent file:/home/k/khalili/NetBeansProjects/FDD_XML/xml-projects/TP04/web/xsd/adherent.xsd'>
+    
+    <ns1:identité>
+        <ns2:nom>kbg</ns2:nom>
+        <ns2:prenom>nour</ns2:prenom>
+    </ns1:identité>
+    
+    <ns1:emprunts>
+        <ns1:titre>Build your dream</ns1:titre>
+        <ns1:auteur>
+            <ns3:idAuteur>
+                <ns2:nom>Steve</ns2:nom>
+                <ns2:prenom>Brain</ns2:prenom>
+            </ns3:idAuteur>
+            <ns3:dateNaissance>1983-01-25</ns3:dateNaissance>
+            <ns3:datedeces>2023-10-10</ns3:datedeces>
+        </ns1:auteur>
+    </ns1:emprunts>
+    
+    <ns1:emprunts>
+        <ns1:titre>Success your life</ns1:titre>
+        <ns1:auteur>
+            <ns3:idAuteur>
+                <ns2:nom>Donald</ns2:nom>
+                <ns2:prenom>Wayne</ns2:prenom>
+            </ns3:idAuteur>
+            <ns3:dateNaissance>1956-11-06</ns3:dateNaissance>
+            <ns3:datedeces>2004-11-08</ns3:datedeces>
+        </ns1:auteur>
+    </ns1:emprunts>
+
+</ns1:adherent>
+

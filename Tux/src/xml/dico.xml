@@ -6,28 +6,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
 
 
 
-<dictionnaire xmlns="http://ujf.fr/tux"
+<dictionnaire xmlns="http://myGame/tux"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://ujf.fr/tux dico.xsd">
+              xsi:schemaLocation="http://myGame/tux dico.xsd">
     <mots>
-        <mot niveau = "1">
-            <contenu>bonjour</contenu>
-        </mot>
-        <mot niveau = "2">
-            <contenu>arbre</contenu>
-        </mot>
-        <mot niveau = "3">
-            <contenu>plage</contenu>
-        </mot>
-        <mot niveau = "4">
-            <contenu>restaurant</contenu>
-        </mot>
-        <mot niveau = "4">
-            <contenu>éléphant</contenu>
-        </mot>
-        <mot niveau = "5">
-            <contenu>bibliothèque</contenu>
-        </mot>
+        <mot niveau = "1">bonjour</mot>
+        <mot niveau = "2">arbre</mot>
+        <mot niveau = "3">plage</mot>
+        <mot niveau = "4">restaurant</mot>
+        <mot niveau = "4">éléphant</mot>
+        <mot niveau = "5">bibliothèque</mot>
     </mots>
     
 </dictionnaire>

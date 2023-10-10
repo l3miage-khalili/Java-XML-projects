@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="http://myGame/tux"
+           xmlns="http://myGame/tux"
+           xmlns:dic="http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <!-- ici importation du fichier dico.xsd" afin de pouvoir 
+        utiliser le type "Mot"
+    -->
+    
+    <xs:include schemaLocation="dico.xsd"/>
+    
+    <!-- ici declaration du nom et du type d'un element "profil" -->
+    
+    <xs:element name="profil" type="Profil"/>
+    
+    <!-- ici definition du type complexe "Profil" de l'element "profil"
+        ainsi que declaration du nom et type de ses sous-elements 
+        "nom", "avatar", "anniversaire" et "parties"
+    -->
+    
+    <xs:complexType name="Profil">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="avatar" type="Avatar"/>
+            <xs:element name="anniversaire" type="xs:date"/>
+            <xs:element name="parties" type="Parties"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- ici definition du type simple "Avatar" de l'element "avatar" -->
+    
+    <xs:simpleType name="Avatar">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z]{1,}.[A-Za-z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- ici definition du type complexe "Parties" de l'element "parties"
+        ainsi que declaration du nom et type de son/ses sous-elements
+        "partie"
+    -->
+    
+    <xs:complexType name="Parties">
+        <xs:sequence>
+            <xs:element name="partie" type="Partie" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- ici definition du type complexe "Partie" de l'element "partie"
+        ainsi que declaration du nom et type de ses sous-elements
+        "temps"(facultatif), "mot" et de ses attributs "date" et "trouvé"(facultatif)
+    -->
+    
+    <xs:complexType name="Partie">
+        <xs:sequence>
+            <xs:element name="temps" type="xs:double" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="mot" type="dic:Mot"/>
+        </xs:sequence>
+        <xs:attribute name="date" type="xs:date" use="required"/>
+        <xs:attribute name="trouvé" type="xs:string"/>
+    </xs:complexType>
+    
+    
+</xs:schema>

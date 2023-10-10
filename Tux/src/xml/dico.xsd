@@ -5,8 +5,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
 -->
 
 <xs:schema version="1.0"
-           targetNamespace="http://ujf.fr/tux"
-           xmlns="http://ujf.fr/tux"
+           targetNamespace="http://myGame/tux"
+           xmlns="http://myGame/tux"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
     
@@ -42,10 +42,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
     -->
     
     <xs:complexType name="Mot">
-        <xs:sequence>
+        <!-- <xs:sequence>
             <xs:element name="contenu" type="Contenu"/>
-        </xs:sequence>
-        <xs:attribute name="niveau" type="Niveau" use="required"/>
+        </xs:sequence> -->
+        <xs:simpleContent>
+            <xs:extension base="Contenu">
+                <xs:attribute name="niveau" type="Niveau" use="required"/>
+            </xs:extension>
+        </xs:simpleContent> 
     </xs:complexType>
     
     <!-- ici definition du type simple "Niveau" de l'attribut "niveau"
@@ -70,7 +74,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
     <xs:simpleType name="Contenu">
         <xs:restriction base="xs:string">
             <xs:pattern value="[A-Za-zéèêôâîàùçï]{3,}"/>
-            <xs:pattern value="[A-Za-zéèêôâîàùçï]'-'[A-Za-zéèêôâîàùçï]"/>
+            <xs:pattern value="[A-Za-zéèêôâîàùçï]-[A-Za-zéèêôâîàùçï]"/>
         </xs:restriction>
     </xs:simpleType>
 

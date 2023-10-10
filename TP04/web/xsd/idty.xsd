@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="http://polytech.ujf-grenoble.fr/idty"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://polytech.ujf-grenoble.fr/idty"
+           elementFormDefault="qualified">
+
+    
+    <!-- ici declaration du nom et du type de l'element "id"  -->
+    
+    <xs:element name="id" type="Id"/>
+    
+    <!-- ici definition du type "Id" de l'element "id"
+        ainsi que les declarations de nom et type de ses sous-elements 
+        "nom" et "prenom" 
+    -->
+    
+    <xs:complexType name="Id">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+</xs:schema>
