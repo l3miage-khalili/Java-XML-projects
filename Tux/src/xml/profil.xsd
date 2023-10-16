@@ -39,7 +39,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
     
     <xs:simpleType name="Avatar">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[A-Za-z]{1,}.[A-Za-z]{2,}"/>
+            <xs:pattern value="[A-Za-z]{1,}.[A-Za-z]{2,4}"/>
         </xs:restriction>
     </xs:simpleType>
     

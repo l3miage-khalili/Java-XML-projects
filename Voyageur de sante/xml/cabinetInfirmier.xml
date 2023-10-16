@@ -6,13 +6,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
 
 
 
-<cabinet>
+<cabinet xmlns="http://www.ujf-grenoble.fr/l3miage/medical"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.ujf-grenoble.fr/l3miage/medical ../xsd/cabinetInfirmier.xsd">
+        
     <nom>Soins à Grenoble</nom>
     <adresse>
         <numéro>60</numéro>
         <rue>rue de la Chimie</rue>
-        <codePostal>38041</codePostal>
         <ville>Grenoble</ville>
+        <codePostal>38041</codePostal>
     </adresse>
     <infirmiers>
         <infirmier id="001">
@@ -42,9 +45,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
             <adresse>
                 <étage>6</étage>
                 <numéro>50</numéro>
-                <rue>avenue Félix Viallet</rue>
+                <rue>avenue Félix Viallet</rue>                
                 <ville>Grenoble</ville>
                 <codePostal>38031</codePostal>
+                
             </adresse>
             <visite date="2015-12-08" intervenant="001">
                 <acte id="109"/>
