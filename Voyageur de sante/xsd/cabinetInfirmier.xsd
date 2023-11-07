@@ -171,7 +171,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
     
     <xs:complexType name="Visite">
         <xs:sequence>
-            <xs:element name="acte" type="Acte"/>
+            <xs:element name="acte" type="Acte" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="date" type="xs:date" use="required"/>
         <xs:attribute name="intervenant" type="xs:int"/>
