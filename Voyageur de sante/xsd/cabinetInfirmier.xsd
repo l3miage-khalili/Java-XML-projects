@@ -45,8 +45,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
     
     <xs:complexType name="Adresse">
         <xs:sequence>
-            <xs:element name="numéro" type="xs:int" minOccurs="0" maxOccurs="1"/>
             <xs:element name="étage" type="xs:int" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="numéro" type="xs:int" minOccurs="0" maxOccurs="1"/>
             <xs:element name="rue" type="xs:string"/>
             <xs:element name="ville" type="xs:string"/>
             <xs:element name="codePostal" type="CodePostal"/>

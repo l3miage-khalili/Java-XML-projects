@@ -10,8 +10,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://myGame/tux dico.xsd">
     <mots>
-        <mot niveau = "1">bonjour</mot>
-        <mot niveau = "2">arbre</mot>
+        <mot niveau = "1">bon</mot>
+        <mot niveau = "1">son</mot>
+        <mot niveau = "1">mon</mot>
+        <mot niveau = "2">bonjour</mot>
+        <mot niveau = "2">bonsoir</mot>
+        <mot niveau = "2">long</mot>
+        <mot niveau = "1">nuit</mot>
+        <mot niveau = "3">arbre</mot>
         <mot niveau = "3">plage</mot>
         <mot niveau = "4">restaurant</mot>
         <mot niveau = "4">éléphant</mot>
