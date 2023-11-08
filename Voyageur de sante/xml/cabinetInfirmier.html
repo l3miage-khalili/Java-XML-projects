@@ -2,13 +2,31 @@
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>cabinetInfirmier.xsl</title>
+<script type="text/javascript">
+                    
+                            function openFacture(prenom, nom, acts) {
+                            var width  = 500;
+                            var height = 300;
+                            if(window.innerWidth) {
+                                var left = (window.innerWidth-width)/2;
+                                var top = (window.innerHeight-height)/2;
+                            }
+                            else {
+                                var left = (document.body.clientWidth-width)/2;
+                                var top = (document.body.clientHeight-height)/2;
+                            }
+                            var factureWindow = window.open('','facture','menubar=yes, scrollbars=yes, top='+top+', left='+left+', width='+width+', height='+height+'');
+                            factureText = "Facture pour : " + prenom + " " + nom + " " + acts;
+                            factureWindow.document.write(factureText);
+                            }
+                        
+                </script>
 </head>
 <body>
                 
                  
                 Bonjour Sarah<br>
-                Aujourd'hui, Vous avez 1 patient(s)
-                
+                Aujourd'hui, Vous avez 2 patient(s)
                 
                 
                 <ol>
@@ -19,7 +37,7 @@
                     adresse : 
                     50 avenue F&eacute;lix Viallet, 38031, Grenoble,  &eacute;tage 6</li>
 <li> 
-                    Soins &agrave; effectuer : 
+                    Soins &agrave; effectuer :
                     <ul>
 <li>
             Injection sous-cutan&eacute;e.
@@ -27,6 +45,35 @@
 </ul>
 </li>
 </ul>
+<input type="button" value="Facture" onclick="
+                        openFacture('Yvon',
+                                    'Al&eacute;cole',
+                                    '109'
+                                    )
+                    ">
+</li>
+<li>
+<ul>
+<li> nom : Orouge</li>
+<li> 
+                    adresse : 
+                      Rond-Point de la Croix de Vie , 38700, La Tronche</li>
+<li> 
+                    Soins &agrave; effectuer :
+                    <ul>
+<li>
+            Pansement de br&ucirc;lure &eacute;tendue ou de plaie chimique ou thermique &eacute;tendue,
+            sur une surface sup&eacute;rieure &agrave; 5% de la surface corporelle.
+        </li>
+</ul>
+</li>
+</ul>
+<input type="button" value="Facture" onclick="
+                        openFacture('Elvire',
+                                    'Orouge',
+                                    '300'
+                                    )
+                    ">
 </li>
 </ol>
 </body>
