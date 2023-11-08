@@ -71,8 +71,10 @@
                     <xsl:value-of select="cab:adresse/cab:codePostal/text()"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of select="cab:adresse/cab:ville/text()"/>
-                    <xsl:text>, </xsl:text>
-                    <xsl:text> étage </xsl:text> <xsl:value-of select="cab:adresse/cab:étage/text()"/>
+                    <xsl:if test="string-length(cab:adresse/cab:étage) > 0">
+                        <xsl:text>, </xsl:text>
+                        <xsl:text> étage </xsl:text> <xsl:value-of select="cab:adresse/cab:étage/text()"/>
+                    </xsl:if>
                 </li>
                 <li> 
                     Soins à effectuer : 
