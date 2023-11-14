@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- A completer : doit contenir le score de la partie -->
+
 <!--
     Document   : pofil.xsl
     Created on : 17 octobre 2023, 17:33

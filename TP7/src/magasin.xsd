@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+           targetNamespace="http://wwww.hejdo.fr/magasin"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:hd="http://wwww.hejdo.fr/magasin"
+           elementFormDefault="qualified">
+ 
+    <xs:element name="hejdo" type="hd:Magasin">
+        <xs:keyref name="refExist" refer="hd:magRefUnique">
+            <xs:selector xpath="hd:expo/hd:reference"/>
+            <xs:field xpath="@refProduit"/>
+            <xs:field xpath="@refElementProduit"/>
+        </xs:keyref>
+    </xs:element>
+     
+    <xs:complexType name="Magasin">
+        <xs:sequence>
+            <xs:element name="magasin" type="hd:ListeProduits">
+                <xs:unique name="magRefUnique">
+                    <xs:selector xpath="hd:reference"/>
+                    <xs:field xpath="@refProduit"/>
+                    <xs:field xpath="@refElementProduit"/>
+                </xs:unique>
+            </xs:element>
+            <xs:element name="expo" type="hd:ListeProduits">
+                <xs:unique name="expoRefUnique">
+                    <xs:selector xpath="hd:reference"/>
+                    <xs:field xpath="@refProduit"/>
+                    <xs:field xpath="@refElementProduit"/>
+                </xs:unique>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="ville" type="xs:string"/>
+        <xs:attribute name="annee" type="xs:gYear"/>
+    </xs:complexType>
+     
+    <xs:complexType name="ListeProduits">
+        <xs:sequence>
+            <xs:element name="reference" type="hd:Produit" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+     
+    <xs:complexType name="Produit">
+        <xs:attribute name="nomProduit" type="xs:string" use="required"/>
+        <xs:attribute name="refElementProduit" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="refProduit" type="xs:unsignedInt" use="required"/>
+        <xs:attribute name="quantite" type="xs:unsignedInt" use="required"/>
+    </xs:complexType>  
+     
+</xs:schema>

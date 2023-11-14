@@ -133,9 +133,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
             <xs:element name="prénom" type="xs:string"/>
             <xs:element name="sexe" type="Sexe"/>
             <xs:element name="naissance" type="xs:date"/>
-            <xs:element name="numéro" type="Numéro" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="numéro" type="Numéro"/>
             <xs:element name="adresse" type="Adresse"/>
-            <xs:element name="visite" type="Visite"/>
+            <xs:element name="visite" type="Visite" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     

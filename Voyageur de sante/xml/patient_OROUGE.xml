@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><patient>
+<nom>Orouge</nom>
+<prénom>Elvire</prénom>
+<sexe>F</sexe>
+<naissance>1982-03-08</naissance>
+<numéroSS>282036912305225</numéroSS>
+<adresse>
+<rue> Rond-Point de la Croix de Vie </rue>
+<ville>La Tronche</ville>
+<codePostal>38700</codePostal>
+</adresse>
+<visite date="2015-12-14">
+<intervenant>
+<nom>Ochon</nom>
+<prénom>paul</prénom>
+</intervenant>
+<acte>
+            Injection intramusculaire.
+        </acte>
+<acte>
+            Ablation de fils ou d'agrafes, dix ou moins, y compris le pansement 
+            éventuel.
+        </acte>
+</visite>
+<visite date="2015-12-08">
+<intervenant>
+<nom>Fréchie</nom>
+<prénom>Sarah</prénom>
+</intervenant>
+<acte>
+            Pansement de brûlure étendue ou de plaie chimique ou thermique étendue,
+            sur une surface supérieure à 5% de la surface corporelle.
+        </acte>
+</visite>
+</patient>

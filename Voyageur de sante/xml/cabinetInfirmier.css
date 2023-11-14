@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 nov. 2023, 23:18:30
+    Author     : Khalil
+*/
+
+/* cabinetInfirmier.css */
+
+/* Mise en forme générale de la page */
+body {
+  font-family: 'Arial', sans-serif; /* Utilisation de la police Arial */
+  background-color: #f4f4f4; /* Couleur de fond de la page : gris très clair */
+  color: #333; /* Couleur du texte principal : gris foncé */
+  margin: 20px; /* Marge autour du corps de la page pour faire d'espace entre le contenu du doc et les bords du navigateur */
+}
+
+/* Mise en forme des listes ordonnées */
+ol {
+  list-style-type: none; /* Suppression des puces de liste ordonnée */
+  padding: 0; /* Suppression du remplissage par défaut de la liste */
+}
+
+/* Mise en forme des éléments de liste */
+li {
+  list-style-type: none; /* Suppression des puces de liste non ordonnée */
+  margin-bottom: 10px; /* Marge en bas de chaque élément de liste */
+  padding: 5px; /* espace aux alentours des contenus */
+  border: 1px solid #ddd; /* Bordure de 1 pixel solide avec une couleur grise */
+  background-color: #fff; /* Couleur de fond blanche */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+/* Mise en forme des boutons */
+input[type="button"] {
+  background-color: #0eb194; /* Couleur de fond du boutton */
+  color: white; /* Couleur du texte blanc */
+  padding: 10px 15px; /* espace de 10px en haut et en bas et de 15px à droite et à gauche */
+  border: none; /* Suppression de la bordure par défaut */
+  border-radius: 3px; /* Coins arrondis */
+}
+
+/* Effet de survol sur les boutons */
+input[type="button"]:hover {
+  background-color: #108372; /* Couleur de fond verte plus foncée au survol */
+  cursor: pointer; /* Changement du curseur au survol */
+}
+

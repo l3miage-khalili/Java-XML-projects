@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hd:hejdo
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:hd='http://wwww.hejdo.fr/magasin'
+    xsi:schemaLocation='http://wwww.hejdo.fr/magasin magasin.xsd'>
+    <hd:magasin>
+        <hd:reference nomProduit="Svalbard" refProduit="1" refElementProduit="A" quantite="12"/>
+        <hd:reference nomProduit="Svalbard" refProduit="1" refElementProduit="B" quantite="32"/>
+        <hd:reference nomProduit="Mulnörk" refProduit="2" refElementProduit="A" quantite="25"/>
+        <hd:reference nomProduit="Traktill" refProduit="3" refElementProduit="A"  quantite="1"/>
+    </hd:magasin>
+    <hd:expo>
+        <hd:reference nomProduit="Svalbard" refProduit="1" refElementProduit="A" quantite="1"/>
+        <hd:reference nomProduit="Svalbard" refProduit="1" refElementProduit="B" quantite="4"/>
+        <hd:reference nomProduit="Mulnörk" refProduit="2" refElementProduit="A" quantite="2"/>
+        <hd:reference nomProduit="Traktill" refProduit="3" refElementProduit="A" quantite="0"/>
+    </hd:expo>
+</hd:hejdo>

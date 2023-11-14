@@ -51,6 +51,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
             </adresse>
             <visite date="2015-12-08" intervenant="001">
                 <acte id="109"/>
+                <acte id="101"/>
+                <acte id="103"/>
+            </visite>
+            <visite date="2015-12-23" intervenant="002">
+                <acte id="104"/>
+                <acte id="105"/>
+                <acte id="109"/>
             </visite>
         </patient>
         <patient>
@@ -67,6 +74,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
             </adresse>
             <visite date="2015-12-08" intervenant="001">
                 <acte id="300"/>
+            </visite>
+            <visite date="2015-12-14" intervenant="003">
+                <acte id="107"/>
+                <acte id="202"/>
             </visite>
         </patient>
         <patient>
