@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tra="https://wwww.univ-grenoble-alpes.fr/trajectoires"
+           targetNamespace="https://wwww.univ-grenoble-alpes.fr/trajectoires"
+           elementFormDefault="qualified">
+    
+    <!-- Ici, declaration de la racine -->
+    <xs:element name="pos" type="tra:Coordonnee"/>
+    
+    <!-- Ici définition du type Coordonnee -->
+    <xs:complexType name="Coordonnee">
+        <xs:sequence>
+            <xs:element name="x" type="xs:double"/>
+            <xs:element name="y" type="xs:double"/>
+            <xs:element name="z" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

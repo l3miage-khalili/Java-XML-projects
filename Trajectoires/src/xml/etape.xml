@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<ns1:etape
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='https://wwww.univ-grenoble-alpes.fr/trajectoires'
+    xsi:schemaLocation='https://wwww.univ-grenoble-alpes.fr/trajectoires ../xsd/etape.xsd'>
+    <ns1:depart>
+        <ns1:x>1.0</ns1:x>
+        <ns1:y>0.5</ns1:y>
+        <ns1:z>1.3</ns1:z>
+    </ns1:depart>
+    <ns1:arrivee>
+        <ns1:x>2.0</ns1:x>
+        <ns1:y>1.5</ns1:y>
+        <ns1:z>2.3</ns1:z>
+    </ns1:arrivee>
+
+</ns1:etape>
+

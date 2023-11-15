@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:et="https://wwww.univ-grenoble-alpes.fr/trajectoires"
+           targetNamespace="https://wwww.univ-grenoble-alpes.fr/trajectoires"
+           elementFormDefault="qualified">
+    
+    <xs:include schemaLocation="coordonnee.xsd"/>
+    
+    <!-- ici, declaration de la racine etape -->
+    <xs:element name="etape" type="et:Etape"/>
+    
+    <!-- ici definition du type Etatpe avec 2 attributs
+        - depart : Coordonnee
+        - arrivee : Coordonnee
+    -->
+    <xs:complexType name="Etape">
+        <xs:sequence>
+            <xs:element name="depart" type="et:Coordonnee"/>
+            <xs:element name="arrivee" type="et:Coordonnee"/>
+        </xs:sequence>
+    </xs:complexType> 
+
+</xs:schema>
