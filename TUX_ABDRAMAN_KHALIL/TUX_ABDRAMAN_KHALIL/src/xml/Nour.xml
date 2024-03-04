@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profil>
+    <nom>Nour</nom>
+    <avatar>fire.png</avatar>
+    <anniversaire>2000</anniversaire>
+    <parties>
+        <partie date="2023-12-01" trouvé="100%">
+            <temps>7</temps>
+            <mot niveau="2">chien</mot>
+        </partie>
+        <partie date="2023-12-01" trouvé="100%">
+            <temps>5</temps>
+            <mot niveau="1">loup</mot>
+        </partie>
+        <partie date="2023-12-01" trouvé="100%">
+            <temps>20</temps>
+            <mot niveau="4">mauritanie</mot>
+        </partie>
+    </parties>
+</profil>

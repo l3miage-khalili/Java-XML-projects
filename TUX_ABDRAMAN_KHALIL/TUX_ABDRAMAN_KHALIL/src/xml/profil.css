@@ -1,0 +1,52 @@
+/* Style pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les cellules du tableau */
+td, th {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style pour la première ligne (en-tête) du tableau */
+tr:first-child {
+    background-color: #4CAF50;
+    color: #009999;
+}
+
+/* Style pour les lignes impaires du tableau */
+tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+/* Style pour les images */
+img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    
+}
+
+/* Style pour les titres */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Style pour l'avatar */
+h2 img {
+    margin-left: 10px;
+}

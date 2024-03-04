@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dictionnaire xmlns="http://myGame/tux"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://myGame/tux dico.xsd">
+    <mots>
+        <mot niveau = "1">chat</mot>
+        <mot niveau = "5">intransigeamment</mot>
+        <mot niveau = "1">arbre</mot>
+        <mot niveau = "5">incommensurabilite</mot>
+        <mot niveau = "4">extraterrestre</mot>
+        <mot niveau = "3">restaurant</mot>
+        <mot niveau = "2">jardin</mot>
+        <mot niveau = "1">soleil</mot>
+        <mot niveau = "2">plage</mot>
+        <mot niveau = "3">bibliotheque</mot>
+        <mot niveau = "4">helicoptere</mot>
+        <mot niveau = "4">astronomie</mot>
+        <mot niveau = "2">ecole</mot>
+        <mot niveau = "5">anticonstitutionnellement</mot>
+        <mot niveau = "1">maison</mot>
+        <mot niveau = "3">ordinateur</mot>
+        <mot niveau = "3">elephant</mot>
+        <mot niveau = "4">chocolatier</mot>
+        <mot niveau = "1">livre</mot>
+        <mot niveau = "3">telephone</mot>
+        <mot niveau = "4">environnement</mot>
+        <mot niveau = "5">incomprehensibilite</mot>
+        <mot niveau = "2">chien</mot>
+        <mot niveau = "5">indivisibilite</mot>
+        <mot niveau = "2">pomme</mot>
+    </mots>
+    
+</dictionnaire>

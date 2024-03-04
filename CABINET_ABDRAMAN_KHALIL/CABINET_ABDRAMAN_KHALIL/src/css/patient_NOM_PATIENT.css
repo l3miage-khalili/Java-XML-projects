@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 13 nov. 2023, 19:36:55
+    Author     : Khalil
+*/
+
+/* Mise en forme générale de la page */
+body {
+  font-family: 'Arial', sans-serif; /* Utilisation de la police Arial */
+  background-color: #f4f4f4; /* Couleur de fond de la page : gris très clair */
+  color: #333; /* Couleur du texte principal : gris foncé */
+  margin: 20px; /* Marge autour du corps de la page pour faire d'espace entre le contenu du doc et les bords du navigateur */
+}
+
+.renseignements{
+    margin: 10px;
+    padding: 5px 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, td {
+    border: 1px solid;
+}
+
+.en-tete {
+    background-color: #0eb194; /* couleur légèrement grise pr les en-têtes */
+}
+
+td{
+    padding: 12px;
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+ul{
+    list-style-type: none; /* Suppression des puces de liste */
+    margin: 0; /* Suppression de la marge par défaut */
+    padding: 0; /* Suppression du remplissage par défaut */
+}
+
+li{
+    margin-bottom: 8px;
+}
